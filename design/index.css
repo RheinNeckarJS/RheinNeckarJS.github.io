@@ -1,0 +1,212 @@
+
+@font-face {
+	font-family: 'icon';
+	src: url('icon.eot');
+	src: url('icon.eot?#iefix') format('embedded-opentype'),
+		 url('icon.woff') format('woff'),
+		 url('icon.ttf') format('truetype'),
+		 url('icon.svg#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'museo-sans-300';
+	src: url('museo-sans-300.eot');
+	src: url('museo-sans-300.eot?#iefix') format('embedded-opentype'),
+		 url('museo-sans-300.woff2') format('woff2'),
+		 url('museo-sans-300.woff') format('woff'),
+		 url('museo-sans-300.ttf') format('truetype'),
+		 url('museo-sans-300.svg#museo_sans300') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source-sans-300';
+	src: url('source-sans-300.eot');
+	src: url('source-sans-300.eot?#iefix') format('embedded-opentype'),
+		 url('source-sans-300.woff2') format('woff2'),
+		 url('source-sans-300.woff') format('woff'),
+		 url('source-sans-300.ttf') format('truetype'),
+		 url('source-sans-300.svg#source_sans300') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source-sans-400';
+	src: url('source-sans-400.eot');
+	src: url('source-sans-400.eot?#iefix') format('embedded-opentype'),
+		 url('source-sans-400.woff2') format('woff2'),
+		 url('source-sans-400.woff') format('woff'),
+		 url('source-sans-400.ttf') format('truetype'),
+		 url('source-sans-400.svg#source_sans400') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source-sans-700';
+	src: url('source-sans-700.eot');
+	src: url('source-sans-700.eot?#iefix') format('embedded-opentype'),
+		 url('source-sans-700.woff2') format('woff2'),
+		 url('source-sans-700.woff') format('woff'),
+		 url('source-sans-700.ttf') format('truetype'),
+		 url('source-sans-700.svg#source_sans700') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.icon:before {
+	font-family: 'icon';
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	vertical-align: top;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-learn:before  { content: '\e05c'; }
+.icon-power:before  { content: '\e026'; }
+.icon-help:before   { content: '\e08a'; }
+.icon-start:before  { content: '\e017'; }
+.icon-follow:before { content: '\e03b'; }
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'museo-sans-300';
+	font-size: 16px;
+	color: #ffffff;
+	background: darkblue;
+}
+
+header {
+	width: 100%;
+	padding: 128px 0px;
+	background-color: rgba(100,149, 237, 0.7);
+	background-position: 0px 0px;
+	background-blend-mode: multiply;
+	background-repeat: repeat repeat;
+}
+
+header > div {
+	display: block;
+	margin: 0px auto;
+	padding: 64px;
+	width: 100%;
+	max-width: 640px;
+	color: #ffffff;
+	background: rgba(0,0,0,0.1) url('../img/heidelberg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	text-align: center;
+}
+
+header > div > p > label {
+	display: inline-block;
+	width: 45%;
+	float: left;
+	text-align: right;
+	color: #ffffff;
+}
+
+header > div > p > a {
+	display: inline-block;
+	width: 45%;
+	float: right;
+	text-align: left;
+}
+
+header > div > p:after {
+	content: " ";
+	display: table;
+	clear: both;
+	*zoom: 1;
+}
+
+header h1 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'source-sans-700';
+	font-size: 40px;
+}
+
+header h1 > span {
+	color: #FFFFFF;
+}
+
+header p {
+	margin: 32px 0px 0px 0px;
+	font-family: 'museo-sans-300';
+	font-size: 20px;
+}
+
+header a {
+	color: darkblue;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 250ms all ease-out;
+}
+
+header a:hover,
+header a:focus {
+	color: #FFFFFF;
+	transition: 250ms all ease-out;
+}
+
+header small {
+	display: inline-block;
+	margin: 2em 0px 0px 0px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+
+main section {
+	padding: 16px 0px;
+	text-align: center;
+}
+
+/*
+ * MEDIA QUERIES
+ */
+
+@media (max-width: 420px) {
+
+	header > div {
+		width: auto;
+		max-width: initial;
+	}
+
+	header p {
+		line-height: 2em;
+	}
+
+	main section article {
+		display: block;
+		margin: 16px 0px;
+		width: auto;
+	}
+
+}
+
+@media (max-width: 320px) {
+
+	header > div {
+		padding: 16px 0px;
+	}
+
+	header p {
+		text-align: justify;
+	}
+
+}
